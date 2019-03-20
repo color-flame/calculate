@@ -1,4 +1,4 @@
-import random
+﻿import random
 from fractions import Fraction
 
 def integer():
@@ -17,8 +17,8 @@ def integer():
     elif k == 3:
         n1, n2 = max(n1, n2), min(n1, n2)
         while n1 % n2 != 0:
-            n1 = random.randint(1,100)
-            n2 = random.randint(1,100)
+            n1 = random.randint(1,20)
+            n2 = random.randint(1,20)
             n1, n2 = max(n1, n2), min(n1, n2)
         result = int(n1/n2)
     print(n1, fh[k], n2, '=', end='')
